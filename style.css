@@ -1,0 +1,22 @@
+:root{--ink:#152238;--muted:#667085;--brand:#155eef;--brand2:#0b3b91;--bg:#f5f7fb;--line:#e7ebf2}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
+a{text-decoration:none;color:inherit}.topbar{background:#101828;color:#fff;padding:10px 5%;font-size:13px;text-align:center}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.nav{max-width:1180px;margin:auto;padding:17px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:23px;font-weight:800;letter-spacing:-.7px}.logo span{color:var(--brand)}
+.navlinks{display:flex;align-items:center;gap:22px;font-weight:600;font-size:14px}.cartlink{background:#eef4ff;color:var(--brand);padding:10px 15px;border-radius:30px}
+main{max-width:1180px;margin:auto;padding:28px 22px 60px}
+.hero{background:linear-gradient(115deg,#102a56,#155eef);color:#fff;border-radius:24px;padding:54px 48px;display:flex;align-items:center;justify-content:space-between;gap:20px;overflow:hidden}
+.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.05;margin:0 0 14px;max-width:570px}.hero p{color:#dce8ff;line-height:1.6;max-width:500px}.pill{display:inline-block;background:#ffffff20;border:1px solid #ffffff40;border-radius:30px;padding:8px 13px;font-size:12px;margin-bottom:15px}
+.cta{display:inline-block;background:#fff;color:#1246a0;padding:13px 19px;border-radius:10px;font-weight:700;margin-top:10px}
+.hero-mark{font-size:110px;opacity:.18;font-weight:900;transform:rotate(-12deg)}
+.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:38px 0 18px}.sectionhead h2{margin:0;font-size:27px}.muted{color:var(--muted);font-size:14px}
+.search{display:flex;gap:8px}.search input{width:220px;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:#fff}.search button,.btn{border:0;background:var(--brand);color:#fff;padding:11px 15px;border-radius:10px;font-weight:700;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:0 5px 18px #10182808}.product img{width:100%;height:210px;object-fit:cover;background:#eef2f7}.productbody{padding:15px}.category{color:var(--brand);font-size:11px;text-transform:uppercase;font-weight:800;letter-spacing:.7px}.product h3{font-size:16px;margin:8px 0}.desc{font-size:13px;color:var(--muted);line-height:1.45;min-height:37px}.price{font-size:19px;font-weight:800;margin:13px 0}.product form button{width:100%}
+.flash{background:#eaf7ef;color:#176b3a;border:1px solid #bce7cc;padding:11px 14px;border-radius:10px;margin:15px 0}
+.panel{background:#fff;border:1px solid var(--line);border-radius:17px;padding:22px;margin-top:22px}.panel h2{margin-top:0}.table{width:100%;border-collapse:collapse}.table th,.table td{text-align:left;padding:13px 8px;border-bottom:1px solid var(--line)}input,textarea{font:inherit}.qty{width:75px;padding:9px;border:1px solid var(--line);border-radius:8px}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px;margin:10px 0}.field input,.field textarea{padding:12px;border:1px solid var(--line);border-radius:9px}.field.full{grid-column:1/-1}
+.total{font-size:23px;font-weight:800;text-align:right;margin:20px 0}.actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}.secondary{background:#eef2f7;color:var(--ink)}
+footer{text-align:center;color:var(--muted);padding:28px 20px;border-top:1px solid var(--line);background:#fff;font-size:13px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.hero{padding:38px 28px}.hero-mark{font-size:70px}}
+@media(max-width:560px){.nav{padding:14px}.navlinks{gap:9px;font-size:12px}.logo{font-size:19px}.hero{padding:32px 22px}.hero-mark{display:none}.sectionhead{align-items:stretch;flex-direction:column}.search input{width:100%;min-width:0}.search{width:100%}.grid{gap:11px}.product img{height:145px}.productbody{padding:11px}.product h3{font-size:14px}.desc{font-size:12px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.table{font-size:13px}}
