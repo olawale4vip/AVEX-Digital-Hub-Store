@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block title %}Order received · AVEX Store{% endblock %}{% block content %}
+<div class="panel"><h2>Thank you, {{ name }}!</h2><p>Your demo order has been recorded on this session.</p><p><strong>Reference:</strong> {{ order_ref }}</p><p><strong>Order total:</strong> ₦{{ "{:,.0f}".format(total) }}</p><p class="muted">This starter project does not yet save orders to a permanent database or process payments.</p><a class="btn" href="{{ url_for('home') }}">Return to store</a></div>{% endblock %}

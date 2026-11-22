@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{% block title %}AVEX Digital Hub Store{% endblock %}</title><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></head>
+<body><div class="topbar">Welcome to AVEX Digital Hub Store · Quality products, convenient shopping</div>
+<header><nav class="nav"><a class="logo" href="{{ url_for('home') }}">AVEX <span>STORE</span></a><div class="navlinks"><a href="{{ url_for('home') }}">Shop</a><a class="cartlink" href="{{ url_for('cart') }}">Cart</a></div></nav></header>
+<main>{% with messages = get_flashed_messages() %}{% if messages %}{% for message in messages %}<div class="flash">{{ message }}</div>{% endfor %}{% endif %}{% endwith %}{% block content %}{% endblock %}</main>
+<footer>© 2026 AVEX Digital Hub · Demo e-commerce website built with Python Flask</footer></body></html>
